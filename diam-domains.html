@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>diam Domains - Professional Domain Registration</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#000000',
+                        secondary: '#666666',
+                    }
+                }
+            }
+        }
+
+        function testToken() {
+            const tokenInput = document.getElementById('test-token');
+            const token = tokenInput.value.trim();
+            if (token) {
+                showClientPortal(token);
+            }
+        }
+    </script>
+</head>
+<body class="bg-white">
+    <!-- Header -->
+    <header class="bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-6">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-bold text-black">diam Domains</h1>
+                    </div>
+                </div>
+                <nav class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#services" class="text-gray-600 hover:text-black px-3 py-2 text-sm font-medium transition-colors">Services</a>
+                        <a href="#contact" class="text-gray-600 hover:text-black px-3 py-2 text-sm font-medium transition-colors">Contact</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Landing Page -->
+        <div id="landing-page">
+            <!-- Hero Section -->
+            <section class="bg-white py-24">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center">
+                        <h1 class="text-6xl md:text-8xl font-bold text-black mb-8 tracking-tight">
+                            Domain Registration
+                        </h1>
+                        <p class="text-2xl md:text-3xl text-gray-600 mb-12 max-w-4xl mx-auto font-light">
+                            Professional domain registration and management services by diam Systems Ltd
+                        </p>
+                        <a href="#contact" class="inline-block bg-black hover:bg-gray-800 text-white font-semibold py-4 px-12 text-lg transition-colors">
+                            Get Started
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services Section -->
+            <section id="services" class="py-24 bg-gray-50">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-20">
+                        <h2 class="text-5xl md:text-6xl font-bold text-black mb-6 tracking-tight">Our Services</h2>
+                        <p class="text-xl text-gray-600 max-w-3xl mx-auto font-light">
+                            Complete domain management solutions for your business
+                        </p>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-3 gap-12">
+                        <div class="bg-white p-12 border border-gray-100">
+                            <div class="w-16 h-16 bg-black flex items-center justify-center mb-8">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-black mb-4">Domain Registration</h3>
+                            <p class="text-gray-600 text-lg leading-relaxed">Secure your perfect domain name with our streamlined registration process and competitive pricing.</p>
+                        </div>
+                        
+                        <div class="bg-white p-12 border border-gray-100">
+                            <div class="w-16 h-16 bg-black flex items-center justify-center mb-8">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-black mb-4">Domain Management</h3>
+                            <p class="text-gray-600 text-lg leading-relaxed">Professional management of your domain portfolio with automatic renewals and DNS configuration.</p>
+                        </div>
+                        
+                        <div class="bg-white p-12 border border-gray-100">
+                            <div class="w-16 h-16 bg-black flex items-center justify-center mb-8">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-black mb-4">Security & Protection</h3>
+                            <p class="text-gray-600 text-lg leading-relaxed">Advanced security features including domain privacy protection and SSL certificate management.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="py-24 bg-white">
+                <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-16">
+                        <h2 class="text-5xl md:text-6xl font-bold text-black mb-6 tracking-tight">Get In Touch</h2>
+                        <p class="text-xl text-gray-600 font-light">
+                            Ready to secure your domain? Contact diam Systems Ltd today.
+                        </p>
+                    </div>
+                    
+                    <!-- Token Test (for development) -->
+                    <div class="bg-gray-50 border border-gray-200 p-6 mb-12">
+                        <h3 class="text-lg font-semibold mb-4">Test Client Portal (Development Only)</h3>
+                        <div class="flex gap-3">
+                            <input type="text" id="test-token" placeholder="Enter token to test" class="flex-1 px-4 py-3 border border-gray-300 text-lg">
+                            <button onclick="testToken()" class="bg-black text-white px-6 py-3 hover:bg-gray-800 transition-colors">Test Token</button>
+                        </div>
+                    </div>
+                    
+                    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-8">
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-3">Full Name</label>
+                                <input type="text" id="name" name="name" required class="w-full px-6 py-4 border border-gray-300 text-lg focus:ring-2 focus:ring-black focus:border-transparent">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-3">Email Address</label>
+                                <input type="email" id="email" name="email" required class="w-full px-6 py-4 border border-gray-300 text-lg focus:ring-2 focus:ring-black focus:border-transparent">
+                            </div>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-700 mb-3">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="w-full px-6 py-4 border border-gray-300 text-lg focus:ring-2 focus:ring-black focus:border-transparent">
+                            </div>
+                            <div>
+                                <label for="domain" class="block text-sm font-medium text-gray-700 mb-3">Desired Domain Name</label>
+                                <input type="text" id="domain" name="domain" required class="w-full px-6 py-4 border border-gray-300 text-lg focus:ring-2 focus:ring-black focus:border-transparent" placeholder="example.com">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-3">Additional Information</label>
+                            <textarea id="message" name="message" rows="6" class="w-full px-6 py-4 border border-gray-300 text-lg focus:ring-2 focus:ring-black focus:border-transparent" placeholder="Tell us about your domain requirements..."></textarea>
+                        </div>
+                        
+                        <div class="text-center">
+                            <button type="submit" class="bg-black hover:bg-gray-800 text-white font-semibold py-4 px-12 text-lg transition-colors">
+                                Send Inquiry
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+
+        <!-- Client Portal -->
+        <div id="client-portal" class="hidden min-h-screen bg-gray-50">
+            <div class="flex">
+                <!-- Sidebar -->
+                <div class="w-80 bg-white border-r border-gray-200 min-h-screen">
+                    <div class="p-8">
+                        <h2 class="text-2xl font-bold text-black mb-8">diam Domains</h2>
+                        <nav class="space-y-2">
+                            <button onclick="showTab('overview')" id="tab-overview" class="tab-button w-full text-left px-4 py-3 rounded-lg font-medium transition-colors bg-black text-white">
+                                Overview
+                            </button>
+                            <button onclick="showTab('details')" id="tab-details" class="tab-button w-full text-left px-4 py-3 rounded-lg font-medium text-gray-600 hover:bg-gray-100 transition-colors">
+                                Domain Details
+                            </button>
+                            <button onclick="showTab('billing')" id="tab-billing" class="tab-button w-full text-left px-4 py-3 rounded-lg font-medium text-gray-600 hover:bg-gray-100 transition-colors">
+                                Billing & Payment
+                            </button>
+                            <button onclick="showTab('support')" id="tab-support" class="tab-button w-full text-left px-4 py-3 rounded-lg font-medium text-gray-600 hover:bg-gray-100 transition-colors">
+                                Support
+                            </button>
+                        </nav>
+                    </div>
+                </div>
+
+                <!-- Main Content Area -->
+                <div class="flex-1 p-12">
+                    <!-- Loading State -->
+                    <div id="loading" class="text-center py-20">
+                        <div class="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-black"></div>
+                        <p class="mt-6 text-gray-600 text-lg">Loading your domain information...</p>
+                    </div>
+
+                    <!-- Error State -->
+                    <div id="error" class="hidden text-center py-20">
+                        <div class="bg-red-50 border border-red-200 p-12 max-w-md mx-auto">
+                            <svg class="mx-auto h-16 w-16 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 48 48">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <h3 class="mt-4 text-xl font-semibold text-gray-900">Access Denied</h3>
+                            <p class="mt-2 text-gray-600">Invalid or expired access token. Please contact support for assistance.</p>
+                            <div class="mt-8">
+                                <a href="/" class="text-black hover:text-gray-700 font-medium">← Return to Home</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Success State -->
+                    <div id="client-info" class="hidden">
+                        <!-- Header -->
+                        <div class="mb-12">
+                            <h1 class="text-4xl font-bold text-black mb-2">Domain Management</h1>
+                            <p class="text-xl text-gray-600">Welcome back, <span id="welcome-name" class="font-semibold">Client</span></p>
+                        </div>
+
+                        <!-- Tab Content -->
+                        <!-- Overview Tab -->
+                        <div id="tab-content-overview" class="tab-content">
+                            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                                <div class="bg-white border border-gray-200 p-8">
+                                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Domain Status</h3>
+                                    <p id="domain-status" class="text-3xl font-bold text-black">Active</p>
+                                    <p class="text-gray-600 mt-2">Your domain is currently active</p>
+                                </div>
+                                <div class="bg-white border border-gray-200 p-8">
+                                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Days Until Expiry</h3>
+                                    <p id="days-until-expiry" class="text-3xl font-bold text-black">-</p>
+                                    <p class="text-gray-600 mt-2">Days remaining</p>
+                                </div>
+                                <div class="bg-white border border-gray-200 p-8">
+                                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Payment Status</h3>
+                                    <p id="payment-status-overview" class="text-3xl font-bold text-black">-</p>
+                                    <p class="text-gray-600 mt-2">Current status</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Domain Details Tab -->
+                        <div id="tab-content-details" class="tab-content hidden">
+                            <div class="bg-white border border-gray-200 p-8">
+                                <h2 class="text-2xl font-bold text-black mb-8">Domain Information</h2>
+                                <div class="grid md:grid-cols-2 gap-12">
+                                    <div class="space-y-6">
+                                        <div>
+                                            <label class="block text-sm font-medium text-gray-500 mb-2">Domain Name</label>
+                                            <p id="domain-name-details" class="text-2xl font-mono text-black">-</p>
+                                        </div>
+                                        <div>
+                                            <label class="block text-sm font-medium text-gray-500 mb-2">Registration Date</label>
+                                            <p id="registration-date" class="text-xl text-black">-</p>
+                                        </div>
+                                        <div>
+                                            <label class="block text-sm font-medium text-gray-500 mb-2">Expiry Date</label>
+                                            <p id="expiry-date-details" class="text-xl text-black">-</p>
+                                        </div>
+                                    </div>
+                                    <div class="space-y-6">
+                                        <div>
+                                            <label class="block text-sm font-medium text-gray-500 mb-2">Domain Status</label>
+                                            <span id="domain-status-badge" class="inline-flex px-4 py-2 rounded-full text-sm font-medium bg-green-100 text-green-800">Active</span>
+                                        </div>
+                                        <div>
+                                            <label class="block text-sm font-medium text-gray-500 mb-2">Name Servers</label>
+                                            <p class="text-sm font-mono text-black">ns1.diamdomains.com<br>ns2.diamdomains.com</p>
+                                        </div>
+                                        <div>
+                                            <label class="block text-sm font-medium text-gray-500 mb-2">SSL Certificate</label>
+                                            <span class="inline-flex px-4 py-2 rounded-full text-sm font-medium bg-green-100 text-green-800">Active</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Billing Tab -->
+                        <div id="tab-content-billing" class="tab-content hidden">
+                            <div class="bg-white border border-gray-200 p-8">
+                                <h2 class="text-2xl font-bold text-black mb-8">Billing Information</h2>
+                                <div class="grid md:grid-cols-2 gap-12">
+                                    <div class="space-y-6">
+                                        <div>
+                                            <label class="block text-sm font-medium text-gray-500 mb-2">Annual Fee</label>
+                                            <p id="amount-details" class="text-3xl font-bold text-black">-</p>
+                                        </div>
+                                        <div>
+                                            <label class="block text-sm font-medium text-gray-500 mb-2">Payment Status</label>
+                                            <span id="paid-status-details" class="inline-flex px-4 py-2 rounded-full text-sm font-medium">-</span>
+                                        </div>
+                                        <div>
+                                            <label class="block text-sm font-medium text-gray-500 mb-2">Next Billing Date</label>
+                                            <p id="next-billing" class="text-xl text-black">-</p>
+                                        </div>
+                                        <div>
+                                            <label class="block text-sm font-medium text-gray-500 mb-2">Auto-Renewal</label>
+                                            <span class="inline-flex px-4 py-2 rounded-full text-sm font-medium bg-green-100 text-green-800">Enabled</span>
+                                        </div>
+                                    </div>
+                                    <div class="space-y-6">
+                                        <div id="payment-actions" class="hidden">
+                                            <h3 class="text-lg font-semibold text-black mb-4">Payment Actions</h3>
+                                            <button id="pay-now-btn" onclick="processPayment()" class="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-4 px-6 text-lg transition-colors">
+                                                Pay Now
+                                            </button>
+                                            <p class="text-sm text-gray-600 mt-2">Secure payment processing</p>
+                                        </div>
+                                        <div id="payment-success" class="hidden">
+                                            <div class="bg-green-50 border border-green-200 p-6 rounded-lg">
+                                                <div class="flex items-center">
+                                                    <svg class="w-6 h-6 text-green-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    <h3 class="text-lg font-semibold text-green-800">Payment Successful</h3>
+                                                </div>
+                                                <p class="text-green-700 mt-2">Your payment has been processed successfully.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Support Tab -->
+                        <div id="tab-content-support" class="tab-content hidden">
+                            <div class="bg-white border border-gray-200 p-8">
+                                <h2 class="text-2xl font-bold text-black mb-8">Support & Contact</h2>
+                                <div class="grid md:grid-cols-2 gap-12">
+                                    <div class="space-y-6">
+                                        <div>
+                                            <label class="block text-sm font-medium text-gray-500 mb-2">Support Email</label>
+                                            <p class="text-xl text-black">support@diamdomains.com</p>
+                                        </div>
+                                        <div>
+                                            <label class="block text-sm font-medium text-gray-500 mb-2">Phone Number</label>
+                                            <p class="text-xl text-black">+1 (555) 123-4567</p>
+                                        </div>
+                                        <div>
+                                            <label class="block text-sm font-medium text-gray-500 mb-2">Response Time</label>
+                                            <p class="text-xl text-black">Within 24 hours</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-lg font-semibold text-black mb-4">Quick Support</h3>
+                                        <div class="space-y-3">
+                                            <div class="p-4 border border-gray-200 hover:bg-gray-50 transition-colors cursor-pointer">
+                                                <p class="font-medium text-black">Domain Transfer</p>
+                                                <p class="text-sm text-gray-600">Transfer your domain to us</p>
+                                            </div>
+                                            <div class="p-4 border border-gray-200 hover:bg-gray-50 transition-colors cursor-pointer">
+                                                <p class="font-medium text-black">DNS Configuration</p>
+                                                <p class="text-sm text-gray-600">Update your DNS settings</p>
+                                            </div>
+                                            <div class="p-4 border border-gray-200 hover:bg-gray-50 transition-colors cursor-pointer">
+                                                <p class="font-medium text-black">SSL Certificate</p>
+                                                <p class="text-sm text-gray-600">Install or renew SSL</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Simple Footer -->
+    <footer class="bg-white border-t border-gray-100 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-gray-600">&copy; 2025 diam Systems Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Check if URL contains a token parameter
+        const urlPath = window.location.pathname;
+        const urlParams = new URLSearchParams(window.location.search);
+        
+        // Extract token from URL path - handle both live site and file:// URLs
+        let token = null;
+        
+        // For file:// URLs, check the hash or end of pathname
+        if (window.location.protocol === 'file:') {
+            // Try hash first (file://path#token)
+            if (window.location.hash) {
+                token = window.location.hash.substring(1);
+            } else {
+                // Try pathname ending (file://path/token)
+                const pathParts = urlPath.split('/');
+                const lastPart = pathParts[pathParts.length - 1];
+                if (lastPart && !lastPart.includes('.html') && lastPart.length > 3) {
+                    token = lastPart;
+                }
+            }
+        } else {
+            // For live sites, get token from path
+            const pathParts = urlPath.split('/');
+            const lastPart = pathParts[pathParts.length - 1];
+            if (lastPart && lastPart !== '' && !lastPart.includes('.') && lastPart.length > 3) {
+                token = lastPart;
+            }
+        }
+        
+        // Also check URL parameters as fallback
+        if (!token && urlParams.has('token')) {
+            token = urlParams.get('token');
+        }
+        
+        // If there's a token, show client portal, otherwise show landing page
+        if (token && token.length > 3) {
+            showClientPortal(token);
+        } else {
+            showLandingPage();
+        }
+
+        function showLandingPage() {
+            document.getElementById('landing-page').classList.remove('hidden');
+            document.getElementById('client-portal').classList.add('hidden');
+        }
+
+        function showClientPortal(token) {
+            document.getElementById('landing-page').classList.add('hidden');
+            document.getElementById('client-portal').classList.remove('hidden');
+            
+            // Fetch client data
+            fetchClientData(token);
+        }
+
+        function showTab(tabName) {
+            // Hide all tab contents
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.add('hidden');
+            });
+            
+            // Remove active state from all tab buttons
+            document.querySelectorAll('.tab-button').forEach(button => {
+                button.classList.remove('bg-black', 'text-white');
+                button.classList.add('text-gray-600', 'hover:bg-gray-100');
+            });
+            
+            // Show selected tab content
+            document.getElementById(`tab-content-${tabName}`).classList.remove('hidden');
+            
+            // Add active state to selected tab button
+            document.getElementById(`tab-${tabName}`).classList.remove('text-gray-600', 'hover:bg-gray-100');
+            document.getElementById(`tab-${tabName}`).classList.add('bg-black', 'text-white');
+        }
+
+        async function fetchClientData(token) {
+            const apiUrl = 'https://script.google.com/macros/s/AKfycbz4bc0roa3ytGlhn7xyk_zeJqfhPgZVHFOQUOY4ZQDbhYvtbybeOjKjYy3eRe6UZXNY/exec';
+            
+            console.log('Testing with token:', token);
+            console.log('API URL:', `${apiUrl}?token=${encodeURIComponent(token)}`);
+            
+            try {
+                const response = await fetch(`${apiUrl}?token=${encodeURIComponent(token)}`);
+                console.log('Response status:', response.status);
+                console.log('Response headers:', response.headers);
+                
+                const data = await response.json();
+                console.log('Response data:', data);
+                
+                if (data.error) {
+                    console.log('API returned error:', data.error);
+                    showError();
+                } else {
+                    showClientInfo(data);
+                }
+            } catch (error) {
+                console.error('Network/fetch error:', error);
+                showError();
+            }
+        }
+
+        function showError() {
+            document.getElementById('loading').classList.add('hidden');
+            document.getElementById('error').classList.remove('hidden');
+        }
+
+        function showClientInfo(data) {
+            document.getElementById('loading').classList.add('hidden');
+            document.getElementById('client-info').classList.remove('hidden');
+            
+            // Store the client data globally for payment processing
+            window.currentClientData = data;
+            
+            // Populate the data across all tabs
+            const clientName = data['Client Name'] || 'Client';
+            const domainName = data.Domain || 'example.com';
+            const expiryDate = data.Expiry ? new Date(data.Expiry) : new Date();
+            const amount = data.Amount || '15.00';
+            const isPaid = data.Paid && data.Paid.toLowerCase() === 'yes';
+            
+            // Calculate days until expiry
+            const daysUntilExpiry = Math.ceil((expiryDate - new Date()) / (1000 * 60 * 60 * 24));
+            
+            // Overview Tab
+            document.getElementById('welcome-name').textContent = clientName;
+            document.getElementById('domain-status').textContent = isPaid ? 'Active' : 'Pending';
+            document.getElementById('days-until-expiry').textContent = daysUntilExpiry > 0 ? daysUntilExpiry : 'Expired';
+            document.getElementById('payment-status-overview').textContent = isPaid ? 'Paid' : 'Pending';
+            
+            // Domain Details Tab
+            document.getElementById('domain-name-details').textContent = domainName;
+            document.getElementById('registration-date').textContent = formatDate(new Date(expiryDate.getTime() - 365 * 24 * 60 * 60 * 1000));
+            document.getElementById('expiry-date-details').textContent = formatDate(expiryDate);
+            
+            // Billing Tab
+            document.getElementById('amount-details').textContent = `£${amount}`;
+            document.getElementById('next-billing').textContent = formatDate(expiryDate);
+            
+            const paidStatusElement = document.getElementById('paid-status-details');
+            if (isPaid) {
+                paidStatusElement.textContent = 'Paid';
+                paidStatusElement.className = 'inline-flex px-4 py-2 rounded-full text-sm font-medium bg-green-100 text-green-800';
+                // Hide payment actions if already paid
+                document.getElementById('payment-actions').classList.add('hidden');
+                document.getElementById('payment-success').classList.remove('hidden');
+            } else {
+                paidStatusElement.textContent = 'Pending';
+                paidStatusElement.className = 'inline-flex px-4 py-2 rounded-full text-sm font-medium bg-yellow-100 text-yellow-800';
+                // Show payment actions if not paid
+                document.getElementById('payment-actions').classList.remove('hidden');
+                document.getElementById('payment-success').classList.add('hidden');
+            }
+            
+            // Update status badges
+            const domainStatusBadge = document.getElementById('domain-status-badge');
+            if (isPaid) {
+                domainStatusBadge.textContent = 'Active';
+                domainStatusBadge.className = 'inline-flex px-4 py-2 rounded-full text-sm font-medium bg-green-100 text-green-800';
+            } else {
+                domainStatusBadge.textContent = 'Pending Payment';
+                domainStatusBadge.className = 'inline-flex px-4 py-2 rounded-full text-sm font-medium bg-yellow-100 text-yellow-800';
+            }
+        }
+
+        function processPayment() {
+            const payButton = document.getElementById('pay-now-btn');
+            const originalText = payButton.textContent;
+            
+            // Show loading state
+            payButton.textContent = 'Loading...';
+            payButton.disabled = true;
+            
+            // Get the Stripe link from the stored API data
+            if (window.currentClientData && window.currentClientData['Stripe Link']) {
+                const stripeLink = window.currentClientData['Stripe Link'];
+                
+                // Redirect to Stripe payment page
+                window.open(stripeLink, '_blank');
+                
+                // Reset button
+                payButton.textContent = originalText;
+                payButton.disabled = false;
+                
+                showNotification('Redirecting to payment page...', 'info');
+            } else {
+                // Fallback if no Stripe link
+                payButton.textContent = originalText;
+                payButton.disabled = false;
+                showNotification('Payment link not available. Please contact support.', 'error');
+            }
+        }
+
+        function showNotification(message, type = 'info') {
+            // Create notification element
+            const notification = document.createElement('div');
+            notification.className = `fixed top-4 right-4 p-4 rounded-lg shadow-lg z-50 ${
+                type === 'success' ? 'bg-green-100 border border-green-200 text-green-800' : 
+                type === 'error' ? 'bg-red-100 border border-red-200 text-red-800' : 
+                'bg-blue-100 border border-blue-200 text-blue-800'
+            }`;
+            notification.textContent = message;
+            
+            // Add to page
+            document.body.appendChild(notification);
+            
+            // Remove after 3 seconds
+            setTimeout(() => {
+                notification.remove();
+            }, 3000);
+        }
+
+        function formatDate(date) {
+            if (!date || isNaN(date.getTime())) return '-';
+            
+            return date.toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
